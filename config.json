@@ -1,0 +1,17 @@
+{
+    "listeners": {
+        "*:80": {
+            "pass": "applications/fastapi"
+        }
+    },
+
+    "applications": {
+        "fastapi": {
+            "type": "python 3.10",
+            "path": "/var/www/projects/just-dial-replica/",
+            "home": "/var/www/projects/just-dial-replica/venv/",
+            "module": "main",
+            "callable": "app"
+        }
+    }
+}
